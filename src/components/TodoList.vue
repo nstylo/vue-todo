@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import TodoItem from "./TodoItem";
+import TodoItem from "./TodoItem"
 
 export default {
   name: "TodoList",
@@ -29,18 +29,18 @@ export default {
       value: "",
       todos: [],
       id: 0
-    };
+    }
   },
   methods: {
     addItem: function(text) {
-      this.value = "";
-      this.todos.push({ text: text, id: this.id++ }); // TODO: might use different function
+      this.value = ""
+      this.todos.push({ text: text, id: this.id++ }) // TODO: might use different function
     }
   },
   components: {
     TodoItem
   }
-};
+}
 </script>
 
 <style scoped>

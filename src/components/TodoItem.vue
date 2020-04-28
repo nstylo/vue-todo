@@ -8,7 +8,7 @@
 export default {
   name: "TodoItem",
   props: ["msg"]
-};
+}
 </script>
 
 <style scoped>

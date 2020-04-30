@@ -1,6 +1,9 @@
 <template id="todo-list">
   <div class="global-wrapper">
     <div class="list-wrapper">
+      <header class="list-header">
+        Vue Todo App
+      </header>
       <input
         class="list-input"
         type="text"
@@ -49,11 +52,11 @@ export default {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin-top: 80px;
 }
 
 .list-wrapper {
-  width: 10em;
+  width: 14em;
   display: flex;
   flex-direction: column;
 }
@@ -65,7 +68,12 @@ export default {
 .list-input {
   height: 1.4em;
   font-size: 1em;
-  width: 100%;
+  width: auto;
   padding: 0 10px;
+}
+
+.list-header {
+  text-align: center;
+  margin-bottom: 30px;
 }
 </style>
